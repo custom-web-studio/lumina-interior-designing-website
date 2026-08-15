@@ -78,3 +78,27 @@ if (hamburger && navMenu) {
   document.getElementById('prevBtn').onclick = () => {
     container.scrollBy({ left: -container.clientWidth, behavior: 'smooth' });
   };
+
+  function sendToWhatsApp(event) {
+  event.preventDefault(); // Prevents page reload
+
+  // 1. Get values from form fields
+  const name = document.getElementById("clientName").value.trim();
+  const location = document.getElementById("clientLocation").value.trim();
+  const project = document.getElementById("projectType").value;
+  const budget = document.getElementById("clientBudget").value;
+
+  // 2. Put your client's WhatsApp number here (Country code + number without + or spaces)
+  const ownerPhoneNumber = "923223488714"; 
+
+  // 3. Format the WhatsApp message text
+  const message = `Hi! I would like to inquire about an interior design consultation.%0A%0A` +
+                  `*Name:* ${encodeURIComponent(name)}%0A` +
+                  `*Location:* ${encodeURIComponent(location)}%0A` +
+                  `*Project Type:* ${encodeURIComponent(project)}%0A` +
+                  `*Estimated Budget:* ${encodeURIComponent(budget)}`;
+
+  // 4. Open WhatsApp with pre-filled message
+  const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${message}`;
+  window.open(whatsappUrl, "_blank");
+}

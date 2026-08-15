@@ -275,7 +275,7 @@
 
             <div class="reviews-wrapper">
 
-               <button class="slider-arrow left-arrow" id="prevBtn">&#10094;</button>
+                <button class="slider-arrow left-arrow" id="prevBtn">&#10094;</button>
 
                 <div class="reviews-container" id="reviewsContainer">
 
@@ -390,120 +390,119 @@
 
 
 
-       <section class="contact-section" id="contact">
-    <div class="contact-container">
-        
-        <!-- Left Side: Text & Info -->
-        <div class="contact-info">
-            <h2 class="contact-heading">Begin Your <em>Transformation</em></h2>
-            <p class="contact-subtext">
-                Request a private consultation with our principal designer. We work with clients globally.
-            </p>
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
 
-            <div class="contact-details">
-                <div class="info-item">
-                    <span class="info-icon">&#128222;</span>
-                    <span>+1 (555) 012-3456</span>
+                <!-- Left Side: Text & Info -->
+                <div class="contact-info">
+                    <h2 class="contact-heading">Begin Your <em>Transformation</em></h2>
+                    <p class="contact-subtext">
+                        Request a private consultation with our principal designer. We work with clients globally.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="info-item">
+                            <span class="info-icon">&#128222;</span>
+                            <span>+1 (555) 012-3456</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">&#9993;</span>
+                            <span>concierge@lumina.design</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">&#128204;</span>
+                            <span>88 Marble Ave, London, SW1A</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <span class="info-icon">&#9993;</span>
-                    <span>concierge@lumina.design</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">&#128204;</span>
-                    <span>88 Marble Ave, London, SW1A</span>
-                </div>
+
+                <!-- Right Side -->
+                <form id="leadForm" onsubmit="sendToWhatsApp(event)">
+                    <h3>Book Design Consultation</h3>
+
+                    <input type="text" id="clientName" placeholder="Your Full Name" required>
+
+                    <input type="text" id="clientLocation" placeholder="Project Location (e.g., DHA Phase 6)" required>
+
+                    <select id="projectType" required>
+                        <option value="" disabled selected>Select Project Type</option>
+                        <option value="Residential - Full Home">Residential - Full Home</option>
+                        <option value="Residential - Room/Kitchen">Residential - Room/Kitchen</option>
+                        <option value="Commercial Office / Store">Commercial Office / Store</option>
+                    </select>
+
+                    <select id="clientBudget" required>
+                        <option value="" disabled selected>Select Budget Range</option>
+                        <option value="Under 5 Lakhs">Under 5 Lakhs</option>
+                        <option value="5 - 15 Lakhs">5 - 15 Lakhs</option>
+                        <option value="15+ Lakhs">15+ Lakhs</option>
+                    </select>
+
+                    <button type="submit">Chat on WhatsApp</button>
+                </form>
             </div>
-        </div>
+        </section>
 
-        <!-- Right Side: Form -->
-       <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-    <!-- 1. Access Key -->
-    <input type="hidden" name="access_key" value="cfa42d82-0ae6-4289-96b7-fbc1452eadb9">
+        <footer class="site-footer">
+            <div class="footer-container">
 
-    <!-- 2. Name input MUST have name="name" -->
-    <div class="form-group">
-        <label for="name">FULL NAME</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-    </div>
+                <!-- Column 1: Brand Info -->
+                <div class="footer-col footer-brand">
+                    <h3 class="footer-logo">LUMINA INTERIORS</h3>
+                    <p class="footer-desc">
+                        Crafting quiet luxury and serene, timeless spaces for residential and commercial clients
+                        worldwide.
+                    </p>
+                </div>
 
-    <!-- 3. Email input MUST have name="email" -->
-    <div class="form-group">
-        <label for="email">EMAIL ADDRESS</label>
-        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
-    </div>
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">NAVIGATION</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
 
-    <!-- 4. Textarea MUST have name="message" -->
-    <div class="form-group">
-        <label for="message">PROJECT DETAILS</label>
-        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
-    </div>
+                <!-- Column 3: Services -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">SERVICES</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Interior Architecture</a></li>
+                        <li><a href="#">Spatial Planning</a></li>
+                        <li><a href="#">Custom Furniture</a></li>
+                        <li><a href="#">Lighting Design</a></li>
+                    </ul>
+                </div>
 
-    <button type="submit" class="submit-btn">SEND INQUIRY</button>
-</form>
+                <!-- Column 4: Contact & Socials -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">GET IN TOUCH</h4>
+                    <p class="footer-contact-text">concierge@lumina.design</p>
+                    <p class="footer-contact-text">+1 (555) 012-3456</p>
 
-    </div>
-</section>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
 
-<footer class="site-footer">
-    <div class="footer-container">
-        
-        <!-- Column 1: Brand Info -->
-        <div class="footer-col footer-brand">
-            <h3 class="footer-logo">LUMINA INTERIORS</h3>
-            <p class="footer-desc">
-                Crafting quiet luxury and serene, timeless spaces for residential and commercial clients worldwide.
-            </p>
-        </div>
-
-        <!-- Column 2: Navigation Links -->
-        <div class="footer-col">
-            <h4 class="footer-heading">NAVIGATION</h4>
-            <ul class="footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 3: Services -->
-        <div class="footer-col">
-            <h4 class="footer-heading">SERVICES</h4>
-            <ul class="footer-links">
-                <li><a href="#">Interior Architecture</a></li>
-                <li><a href="#">Spatial Planning</a></li>
-                <li><a href="#">Custom Furniture</a></li>
-                <li><a href="#">Lighting Design</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 4: Contact & Socials -->
-        <div class="footer-col">
-            <h4 class="footer-heading">GET IN TOUCH</h4>
-            <p class="footer-contact-text">concierge@lumina.design</p>
-            <p class="footer-contact-text">+1 (555) 012-3456</p>
-            
-            <div class="footer-socials">
-                <a href="#" class="social-link">Instagram</a>
-                <a href="#" class="social-link">Pinterest</a>
-                <a href="#" class="social-link">LinkedIn</a>
             </div>
-        </div>
 
-    </div>
-
-    <!-- Bottom Copyright Line -->
-    <div class="footer-bottom">
-        <p>&copy; 2026 Lumina Interiors. All rights reserved.</p>
-    </div>
-</footer>
+            <!-- Bottom Copyright Line -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Interiors. All rights reserved.</p>
+            </div>
+        </footer>
 
     </main>
 
     <script src="script.js"></script>
-    
+
 
 </body>
 
