@@ -148,7 +148,7 @@ header {
 }
 
 .hero-heading {
-    color: #d3cccc;
+    color: #ffffff;
     /* Turns text white so it pops against the dark image */
     text-align: center;
     font-family: var(--font-heading);
