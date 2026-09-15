@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Interiors | Luxury Interior Design Studio</title>
+    <meta name="description" content="Lumina Interiors offers full-service interior design, 2D layouts, photorealistic 3D rendering, and turnkey project management for residential and commercial spaces.">
+
+    <!-- Open Graph / social share preview -->
+    <meta property="og:title" content="Lumina Interiors | Luxury Interior Design Studio">
+    <meta property="og:description" content="Full-service interior design, 3D rendering, and turnkey project management for residential and commercial spaces.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-kitchen.webp">
+
+    <!-- Preload the hero background image so it starts loading immediately -->
+    <link rel="preload" as="image" href="images/hero-kitchen.webp">
+
+    <!-- Google Fonts Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts Import (Playfair Display for headings, Inter for body/nav) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- Your CSS File -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TODO: replace phone/address placeholders below with your real business details -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InteriorDesignFirm",
+      "name": "Lumina Interiors",
+      "url": "https://lumina-interior-designing-website.vercel.app/",
+      "telephone": "+92-322-3488714",
+      "email": "concierge@lumina.design",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gulshan-e-Iqbal, block-7",
+        "addressLocality": "Karachi",
+        "addressCountry": "Pakistan"
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="#home" class="logo">Lumina Interiors </a>
+            </div>
+
+            <!-- Insert this inside <nav>, right after .logo-container -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="nav-menu">
+                <div class="list">
+                    <ul>
+                        <li><a href="#home" class="list-items">Home</a></li>
+                        <li><a href="#services" class="list-items">Services</a></li>
+                        <li><a href="#portfolio" class="list-items">Portfolio</a></li>
+                        <li><a href="#about-us" class="list-items">About Us</a></li>
+                        <li><a href="#contact" class="list-items">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <a href="https://wa.me/923223488714?text=Hi!%20I'd%20like%20to%20inquire%20about%20your%20interior%20design%20services."
+                        target="_blank" class="booking-btn">
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-heading">Elevate Your Dream <br>Home Today. </h1>
+
+                    <p class="hero-para">Interior design services for residential and <br>commercial
+                        properties.</p>
+
+                    <div class="hero-btns">
+                        <a href="#portfolio" class="hero-portfolio-btn">View our Portfolio</a>
+                        <a href="#services" class="hero-services-btn">Our Services</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+
+            <h2 class="our-services-heading">Our Services</h2>
+
+            <div class="services-container">
+
+                <div class="service-item">
+
+                    <img src="images/living-room.webp" alt="Full-service interior design living room" class="service-img" width="900" height="562" loading="eager" fetchpriority="high">
+                    <h3 class="services-heading">Full-Service Interior Design</h3>
+                    <p class="services-para">End-to-end spatial planning and custom styling for full homes, living
+                        spaces, and luxury residences.</p>
+                </div>
+
+
+                <div class="service-item">
+                    <img src="images/2d-architecture.webp" alt="2D architectural floor plan layout" class="service-img" width="900" height="506" loading="lazy">
+                    <h3 class="services-heading">2D Layouts & Elevations</h3>
+                    <p class="services-para">Technical floor plans, architectural wall elevations, electrical
+                        schematics, and structural space planning.</p>
+
+                </div>
+
+                <div class="service-item">
+                    <img src="images/3d-design.webp" alt="Photorealistic 3D interior rendering" class="service-img" width="900" height="506" loading="lazy">
+                    <h3 class="services-heading">Photorealistic 3D Rendering</h3>
+                    <p class="services-para">Hyper-realistic 3D visual walkthroughs and digital renders to help clients
+                        preview spaces before construction.</p>
+                </div>
+
+                <div class="service-item">
+                    <img src="images/elevation-design.webp" alt="Architectural elevation and millwork design" class="service-img" width="900" height="582" loading="lazy">
+
+                    <h3 class="services-heading">Elevation & Detail Design</h3>
+                    <p class="services-para">Detailed architectural wall elevations, custom cabinetry millwork drawings,
+                        and precise material specification plans for construction.</p>
+                </div>
+
+                <div class="service-item">
+                    <img src="images/turnkey-interior-design.webp" alt="Turnkey interior project management" class="service-img" width="900" height="605" loading="lazy">
+                    <h3 class="services-heading">Turnkey Project Management</h3>
+                    <p class="services-para">Complete site supervision, contractor management, material procurement, and
+                        timeline execution from start to finish.</p>
+                </div>
+
+                <div class="service-item">
+                    <img src="images/boutique-interior.webp" alt="Commercial and retail interior design" class="service-img" width="900" height="600" loading="lazy">
+                    <h3 class="services-heading">Commercial & Retail Spaces</h3>
+                    <p class="services-para">Brand-focused interior design and spatial optimization for retail stores,
+                        boutique shops, cafes, and modern offices.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="portfolio" id="portfolio">
+
+            <div class="portfolio-header">
+                <h2><span class="pf-main-heading-second-line">Our Signature
+                        Projects</span></h2>
+
+               
+            </div>
+
+            <div class="portfolio-container">
+
+                <div class="portfolio-item">
+                    <img src="images/horizon.webp" alt="The Horizon Penthouse living room" class="portfolio-img" width="1200" height="800" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-heading">The Horizon Penthouse</h3>
+                        <p class="portfolio-item-para">Complete spatial layout, custom luxury millwork, and warm
+                            ambient
+                            lighting for a 4-bedroom modern apartment..</p>
+                    </div>
+                </div>
+
+
+
+                <div class="portfolio-item">
+                    <img src="images/lumiere-boutique-cafe.webp" alt="Lumière Boutique and Cafe retail interior" class="portfolio-img" width="1200" height="800" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-heading">Lumière Boutique & Cafe</h3>
+                        <p class="portfolio-item-para">Strategic retail zoning, custom display fixtures, and accent
+                            Edison
+                            lighting to maximize customer flow and engagement.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/office-design.webp" alt="Apex Tech HQ office workspace design" class="portfolio-img" width="1200" height="645" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-heading">Apex Tech HQ Workspaces</h3>
+                        <p class="portfolio-item-para">Open-concept collaborative zones, acoustic wall paneling, and
+                            modern
+                            ergonomic workstations for a high-growth tech firm.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/living-room-render.webp" alt="Villa Serena living space 3D render" class="portfolio-img" width="1200" height="632" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-heading">Villa Serena Living Space</h3>
+                        <p class="portfolio-item-para">Photorealistic 3D visualization and lighting walkthrough
+                            provided prior
+                            to full structural renovation.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/urban.webp" alt="Urban Loft kitchen and dining design" class="portfolio-img" width="1200" height="675" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-heading">Urban Loft Kitchen & Dining</h3>
+                        <p class="portfolio-item-para">End-to-end site management, custom cabinetry installation,
+                            and marble
+                            fixture procurement for a downtown loft.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/bedroom.webp" alt="The Minimalist Master Suite bedroom design" class="portfolio-img" width="1200" height="800" loading="lazy">
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-heading">The Minimalist Master Suite</h3>
+                        <p class="portfolio-item-para">Detailed architectural wall elevations, integrated bedroom
+                            headboard
+                            millwork, and tailored material palette selection.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="about-us-section" id="about-us">
+
+            <h5 class="about-us-heading">About-Us</h5>
+
+            <div class="about-us-container">
+                <div class="about-us-img">
+                    <img src="images/about-us-picture.webp" alt="Lumina Interiors designer desk" width="1200" height="1800" loading="lazy">
+                </div>
+
+
+                <div class="about-us-textbox">
+                    <h6 class="philosophy">Our Philosphy</h6>
+                    <h4 class="about-us-main-heading">Architecture of<br><span
+                            class="about-us-main-heading-second-line">Quiet Luxury</span></h4>
+                    <p class="about-us-para">At Lumina, we believe that luxury is not about ostentation, but about the
+                        profound silence of a perfectly resolved space. We treat every room as a gallery, and every
+                        piece of
+                        furniture as a sculptural element.</p>
+
+
+                    <p class="about-us-para">Our studio bridges the gap between traditional craftsmanship and modern
+                        minimalism. By layering rich, natural textures—marble, linen, raw wood—with cutting-edge
+                        architectural details, we create homes that feel both grounded in heritage and effortlessly
+                        contemporary.
+                    </p>
+
+                    <div class="about-us-stats">
+                        <div class="stat-item">
+                            <!-- Target is 10, suffix is 'Y' -->
+                            <h3 class="stat-number" data-target="5" data-suffix="Y">0</h3>
+                            <p class="stat-label">Experience</p>
+                        </div>
+
+                        <div class="stat-item">
+                            <!-- Target is 100, suffix is '+' -->
+                            <h3 class="stat-number" data-target="74" data-suffix="+">0</h3>
+                            <p class="stat-label">Projects</p>
+                        </div>
+
+                        <div class="stat-item">
+                            <!-- Target is 100, suffix is '+' -->
+                            <h3 class="stat-number" data-target="68" data-suffix="+">0</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="testimonials">
+            <h2 class="reviews-main-heading">What Our Clients Say</h2>
+
+            <div class="reviews-wrapper">
+
+                <button class="slider-arrow left-arrow" id="prevBtn">&#10094;</button>
+
+                <div class="reviews-container" id="reviewsContainer">
+
+                    <div class="review-card" id="card-1">
+                        <div class="avatar-name">
+                            <div class="review-avatar">S</div>
+                            <h5 class="review-name">Sarah Ahmed</h5>
+                        </div>
+
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-para">Lumina transformed our apartment into a absolute masterpiece. The
+                            attention to detail and balance of natural textures is unreal.</p>
+                    </div>
+
+
+
+                    <div class="review-card" id="card-2">
+                        <div class="avatar-name">
+                            <div class="review-avatar">T</div>
+
+                            <h5 class="review-name">Tariq Malik</h5>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-para">Working with them was completely seamless. They captured the true essence
+                            of quiet luxury without sacrificing functional everyday living.</p>
+                    </div>
+
+
+
+                    <div class="review-card" id="card-3">
+                        <div class="avatar-name">
+                            <div class="review-avatar">A</div>
+
+                            <h5 class="review-name">Ayesha Khan</h5>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-para">Clean design, timeless aesthetics, and super professional execution. The
+                            lighting layout alone completely elevated our entire home.</p>
+                    </div>
+
+
+
+                    <div class="review-card" id="card-4">
+                        <div class="avatar-name">
+                            <div class="review-avatar">Z</div>
+
+                            <h5 class="review-name">Zainab Raza</h5>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-para">They turned our outdated living area into a sleek, peaceful sanctuary.
+                            Every single piece of furniture feels like a custom piece of art.</p>
+                    </div>
+
+
+
+                    <div class="review-card" id="card-5">
+                        <div class="avatar-name">
+                            <div class="review-avatar">B</div>
+
+                            <h5 class="review-name">Bilal Mansoor</h5>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-para">Incredible eye for space planning. They managed to make our compact
+                            duplex feel twice as large using minimalist, grounded architectural elements.</p>
+                    </div>
+
+
+
+                    <div class="review-card" id="card-6">
+                        <div class="avatar-name">
+                            <div class="review-avatar">H</div>
+
+                            <h5 class="review-name">Hira Zubair</h5>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-para">From initial concept sketches to final styling, Lumina exceeded every
+                            expectation. Their commitment to understated elegance is unmatched.</p>
+                    </div>
+
+
+
+                    <div class="review-card" id="card-7">
+                        <div class="avatar-name">
+                            <div class="review-avatar">O</div>
+
+                            <h5 class="review-name">Owais Siddiqui</h5>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-para">Timely execution, high-end material sourcing, and zero stress. The team
+                            completely respected our budget while delivering five-star luxury.</p>
+                    </div>
+
+
+
+                    <div class="review-card" id="card-8">
+                        <div class="avatar-name">
+                            <div class="review-avatar">M</div>
+                            <h5 class="review-name">Mariam Farooq</h5>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-para">The subtle color palette and rich wood accents created a home that feels
+                            incredibly serene and sophisticated. Best design decision we ever made!</p>
+                    </div>
+
+                </div>
+
+                <!-- Replace the bottom arrow link in your HTML with this: -->
+                <button class="slider-arrow right-arrow" id="nextBtn">&#10095;</button>
+            </div>
+
+        </section>
+
+
+
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+
+                <!-- Left Side: Text & Info -->
+                <div class="contact-info">
+                    <h2 class="contact-heading">Begin Your <em>Transformation</em></h2>
+                    <p class="contact-subtext">
+                        Request a private consultation with our principal designer. We work with clients globally.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="info-item">
+                            <span class="info-icon">&#128222;</span>
+                            <span>+92 322 3488714</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">&#9993;</span>
+                            <span>concierge@lumina.design</span>
+                        </div>
+                        <div class="info-item">
+                            <!-- TODO: replace with your real business address -->
+                            <span class="info-icon">&#128204;</span>
+                            <span>Gulshan-e-Iqbal, Block 7, Karachi, Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <form id="leadForm" onsubmit="sendToWhatsApp(event)">
+                    <h3>Book Design Consultation</h3>
+
+                    <input type="text" id="clientName" placeholder="Your Full Name" required>
+
+                    <input type="text" id="clientLocation" placeholder="Project Location (e.g., DHA Phase 6)" required>
+
+                    <select id="projectType" required>
+                        <option value="" disabled selected>Select Project Type</option>
+                        <option value="Residential - Full Home">Residential - Full Home</option>
+                        <option value="Residential - Room/Kitchen">Residential - Room/Kitchen</option>
+                        <option value="Commercial Office / Store">Commercial Office / Store</option>
+                    </select>
+
+                    <select id="clientBudget" required>
+                        <option value="" disabled selected>Select Budget Range</option>
+                        <option value="Under 5 Lakhs">Under 5 Lakhs</option>
+                        <option value="5 - 15 Lakhs">5 - 15 Lakhs</option>
+                        <option value="15+ Lakhs">15+ Lakhs</option>
+                    </select>
+
+                    <button type="submit">Chat on WhatsApp</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <!-- Column 1: Brand Info -->
+                <div class="footer-col footer-brand">
+                    <h3 class="footer-logo">LUMINA INTERIORS</h3>
+                    <p class="footer-desc">
+                        Crafting quiet luxury and serene, timeless spaces for residential and commercial clients
+                        worldwide.
+                    </p>
+                </div>
+
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">NAVIGATION</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">SERVICES</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Interior Architecture</a></li>
+                        <li><a href="#">Spatial Planning</a></li>
+                        <li><a href="#">Custom Furniture</a></li>
+                        <li><a href="#">Lighting Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Socials -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">GET IN TOUCH</h4>
+                    <p class="footer-contact-text">concierge@lumina.design</p>
+                    <p class="footer-contact-text">+92 322 3488714</p>
+
+                    <!-- TODO: replace "#" with your real social profile URLs -->
+                    <!-- <div class="footer-socials">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div> -->
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Line -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Interiors. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
