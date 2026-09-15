@@ -136,7 +136,7 @@ header {
 
 .hero {
     /* Linear gradient creates the dark overlay; lower opacity = lighter, higher = darker */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-img.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero\ kitchen.jpg');
     background-size: cover;
     background-position: center;
     min-height: 90vh;
@@ -148,14 +148,14 @@ header {
 }
 
 .hero-heading {
-    color: #ffffff;
+    color: #d3cccc;
     /* Turns text white so it pops against the dark image */
     text-align: center;
     font-family: var(--font-heading);
     font-size: 2rem;
 
     display: inline-block;
-    transform: scaleY(1.3);
+    transform: scaleY(1.1);
 
     margin-bottom: 0.8rem;
 }
@@ -163,11 +163,11 @@ header {
 
 
 .hero-para {
-    color: #ffffff;
+    color: #d3cccc;
     text-align: center;
     font-family: var(--font-body);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.4;
 
     max-width: 500px;
     /* Limits how wide the text can stretch */
@@ -278,7 +278,7 @@ header {
 }
 
 
-.pf-main-heading {
+/* .pf-main-heading {
     color: var(--text-muted);
 
     font-family: 'Cormorant Garamond', serif;
@@ -293,7 +293,7 @@ header {
     padding-bottom: 1rem;
 
 
-}
+} */
 
 .pf-main-heading-second-line {
     color: var(--accent-gold);
@@ -301,12 +301,14 @@ header {
     font-family: 'Cormorant Garamond', serif;
 
     letter-spacing: 0.1rem;
-    font-style: italic;
+    text-transform: uppercase;
     font-weight: 1000;
 
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     transform: scaleY(1.1);
-    font-size: 3.5rem;
+    font-size: 3rem;
+
 
 }
 
@@ -710,87 +712,95 @@ header {
 
 /* Container styled for luxury interior design theme */
 #leadForm {
-  max-width: 440px;
-  margin: 30px auto;
-  padding: 32px;
-  background-color: #1a1a1a; /* Dark charcoal background */
-  border: 1px solid #2a2a2a;
-  border-radius: 4px; /* Sleek, minimal corners */
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  font-family: 'Playfair Display', 'Georgia', serif; /* Elegant serif font */
-  color: #f5f5f5;
+    max-width: 440px;
+    margin: 30px auto;
+    padding: 32px;
+    background-color: #1a1a1a;
+    /* Dark charcoal background */
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    /* Sleek, minimal corners */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    font-family: 'Playfair Display', 'Georgia', serif;
+    /* Elegant serif font */
+    color: #f5f5f5;
 }
 
 /* Form Heading */
 #leadForm h3 {
-  margin-top: 0;
-  margin-bottom: 24px;
-  font-size: 1.5rem;
-  letter-spacing: 0.5px;
-  color: #e6c594; /* Champagne gold accent */
-  text-align: center;
-  font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    color: #e6c594;
+    /* Champagne gold accent */
+    text-align: center;
+    font-weight: 500;
 }
 
 /* Input Fields and Select Dropdowns */
 #leadForm input,
 #leadForm select {
-  width: 100%;
-  padding: 14px 16px;
-  margin-bottom: 18px;
-  background-color: #242424;
-  border: 1px solid #3d3d3d;
-  border-radius: 2px;
-  font-family: 'Inter', 'Segoe UI', sans-serif; /* Clean sans-serif for inputs */
-  font-size: 0.9rem;
-  color: #ffffff;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    background-color: #242424;
+    border: 1px solid #3d3d3d;
+    border-radius: 2px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    /* Clean sans-serif for inputs */
+    font-size: 0.9rem;
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 #leadForm select option {
-  background-color: #242424;
-  color: #ffffff;
+    background-color: #242424;
+    color: #ffffff;
 }
 
 /* Placeholder Styling */
 #leadForm input::placeholder {
-  color: #888888;
+    color: #888888;
 }
 
 /* Focus State */
 #leadForm input:focus,
 #leadForm select:focus {
-  outline: none;
-  border-color: #e6c594; /* Highlight gold on focus */
-  background-color: #2b2b2b;
+    outline: none;
+    border-color: #e6c594;
+    /* Highlight gold on focus */
+    background-color: #2b2b2b;
 }
 
 /* Premium Button Styling */
 #leadForm button {
-  width: 100%;
-  padding: 15px;
-  background-color: #e6c594; /* Champagne Gold */
-  color: #121212;
-  border: none;
-  border-radius: 2px;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+    padding: 15px;
+    background-color: #e6c594;
+    /* Champagne Gold */
+    color: #121212;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 /* Hover & Active States */
 #leadForm button:hover {
-  background-color: #d4b280;
+    background-color: #d4b280;
 }
 
 #leadForm button:active {
-  transform: scale(0.99);
+    transform: scale(0.99);
 }
+
 /* Footer Container */
 .site-footer {
     background-color: var(--bg-surface, #141414);
@@ -922,10 +932,11 @@ header {
         font-size: 2.6rem;
     }
 
-   #leadForm {
-    max-width: 400px;
-    padding: 28px;
-  }
+    #leadForm {
+        max-width: 400px;
+        padding: 28px;
+    }
+
     .footer-container {
         gap: 2rem;
     }
@@ -993,21 +1004,21 @@ header {
         margin-bottom: 2rem;
     }
 
-   #leadForm {
-    max-width: 380px;
-    padding: 24px;
-  }
-  
-  #leadForm h3 {
-    font-size: 1.35rem;
-    margin-bottom: 20px;
-  }
+    #leadForm {
+        max-width: 380px;
+        padding: 24px;
+    }
 
-  #leadForm input,
-  #leadForm select {
-    padding: 12px 14px;
-    font-size: 0.88rem;
-  }
+    #leadForm h3 {
+        font-size: 1.35rem;
+        margin-bottom: 20px;
+    }
+
+    #leadForm input,
+    #leadForm select {
+        padding: 12px 14px;
+        font-size: 0.88rem;
+    }
 
     .footer-container {
         grid-template-columns: 1.2fr 1fr 1fr 1fr;
@@ -1207,15 +1218,16 @@ header {
         gap: 1.25rem;
     }
 
-  #leadForm {
-    max-width: 100%; /* Spans full width of its column/container */
-    margin: 20px auto;
-    padding: 24px 20px;
-  }
+    #leadForm {
+        max-width: 100%;
+        /* Spans full width of its column/container */
+        margin: 20px auto;
+        padding: 24px 20px;
+    }
 
-  #leadForm h3 {
-    font-size: 1.3rem;
-  }
+    #leadForm h3 {
+        font-size: 1.3rem;
+    }
 
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
@@ -1225,6 +1237,13 @@ header {
 
 
 
+}
+
+@media (max-width:535px) {
+    .pf-main-heading-second-line {
+        font-size: 2rem;
+
+    }
 }
 
 /* ======================================================
@@ -1266,19 +1285,27 @@ header {
     }
 
     /* --- Sections & Containers --- */
-    .portfolio-container, 
+    .portfolio-container,
     .services-container {
         padding: 0 1rem;
     }
 
+    .pf-main-heading-second-line {
+        font-size: 1.5rem;
+    }
+
+    .our-services-heading {
+        font-size: 2.5rem;
+    }
+
     .about-us-stats {
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  gap: 0.5rem;
-  text-align: center;
-}
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+        text-align: center;
+    }
 
     .reviews-main-heading {
         font-size: 1.8rem;
@@ -1320,32 +1347,33 @@ header {
     }
 
     #leadForm {
-    width: 100%;
-    padding: 20px 16px;
-    margin: 15px 0;
-    box-shadow: none; /* Cleaner look on small mobile viewports */
-    border-radius: 4px;
-  }
+        width: 100%;
+        padding: 20px 16px;
+        margin: 15px 0;
+        box-shadow: none;
+        /* Cleaner look on small mobile viewports */
+        border-radius: 4px;
+    }
 
-  #leadForm h3 {
-    font-size: 1.2rem;
-    margin-bottom: 18px;
-  }
+    #leadForm h3 {
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+    }
 
-  #leadForm input,
-  #leadForm select {
-    padding: 12px;
-    font-size: 0.85rem;
-    margin-bottom: 14px;
-  }
+    #leadForm input,
+    #leadForm select {
+        padding: 12px;
+        font-size: 0.85rem;
+        margin-bottom: 14px;
+    }
 
-  #leadForm button {
-    padding: 14px;
-    font-size: 0.88rem;
-    letter-spacing: 0.5px;
-  }
+    #leadForm button {
+        padding: 14px;
+        font-size: 0.88rem;
+        letter-spacing: 0.5px;
+    }
 
-   
+
 
     /* --- Footer --- */
     .site-footer {
@@ -1362,14 +1390,76 @@ header {
     }
 }
 
-@media(max-width: 410px){
-    .hero-para{
+@media(max-width: 410px) {
+    .hero-para {
         font-size: 0.78rem;
+    }
+
+    .pf-main-heading-second-line {
+        font-size: 1rem;
+
+    }
+
+    .our-services-heading {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media(max-width=355px){
+     .about-us-main-heading {
+        font-size: 2rem;
+        transform: scaleY(1.1);
+        line-height: 2.2rem;
+    }
+
+    .about-us-main-heading-second-line {
+        font-size: 2.2rem;
+        transform: scaleY(1.1);
     }
 }
 
-@media(max-width: 350px){
-    .hero-para{
+@media(max-width: 350px) {
+    .hero-para {
         font-size: 0.7rem;
+    }
+
+    .our-services-heading {
+        font-size: 2.5rem;
+    }
+
+    .about-us-main-heading {
+        font-size: 2rem;
+        transform: scaleY(1.1);
+        line-height: 2rem;
+    }
+
+    .about-us-main-heading-second-line {
+        font-size: 2rem;
+        transform: scaleY(1.1);
+    }
+}
+
+@media(max-width: 300px) {
+
+    .logo {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+
+    .hero-heading {
+        font-size: 1.3rem;
+        line-height: 1.25;
+        text-align: center;
+        transform: scaleY(1);
+    }
+
+    .hero-para {
+        font-size: 0.6rem;
+    }
+
+    .our-services-heading {
+        font-size: 2rem;
     }
 }
