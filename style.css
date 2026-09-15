@@ -136,11 +136,7 @@ header {
 
 .hero {
     /* Linear gradient creates the dark overlay; lower opacity = lighter, higher = darker */
-<<<<<<< HEAD
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-kitchen.webp');
-=======
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero\ kitchen.jpg');
->>>>>>> 3cba9ca35545d4e43751deb316ef0e19e1f9d6e7
     background-size: cover;
     background-position: center;
     min-height: 90vh;
@@ -154,12 +150,14 @@ header {
 .hero-heading {
     color: #ffffff;
     /* Turns text white so it pops against the dark image */
-    text-align: center;
+    /* text-align: center; */
     font-family: var(--font-heading);
     font-size: 2rem;
 
-    display: inline-block;
-    transform: scaleY(1.1);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transform: scaleY(1);
 
     margin-bottom: 0.8rem;
 }
@@ -358,10 +356,7 @@ header {
 
 .portfolio-img {
     width: 100%;
-<<<<<<< HEAD
     height: auto;
-=======
->>>>>>> 3cba9ca35545d4e43751deb316ef0e19e1f9d6e7
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 4px 4px 0 0;
